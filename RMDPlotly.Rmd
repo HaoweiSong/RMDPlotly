@@ -1,0 +1,24 @@
+---
+title: "RMD_Plotly"
+author: "Haowei Song"
+date: "October 2, 2017"
+output: html_document
+---
+
+
+## Install and load the library
+
+```{r, eval=FALSE}
+install.packages("plotly")
+library(plotly)
+```
+
+## plot_ly plots with mtcars data
+
+```{r, echo=TRUE,message=FALSE}
+library(plotly)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", color = ~factor(cyl))
+```
+
+##Thanks!
+
