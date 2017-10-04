@@ -1,0 +1,30 @@
+---
+title: "R Markdown Presentation & Plotly"
+author: "Haowei Song"
+date: "October 3, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, eval=FALSE}
+install.packages("plotly")
+library(plotly)
+```
+
+## plot_ly plots with mtcars data
+
+```{r, eval=FALSE}
+install.packages("plotly")
+library(plotly)
+```
+
+```{r, echo=FALSE,message=FALSE, warning = FALSE}
+library(plotly)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", color = ~factor(cyl))
+```
+
+##Thanks!
+
